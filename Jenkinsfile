@@ -2,13 +2,13 @@ Pipeline {
  agent { label 'linux' }
  stages {
   stage ('Unit Tests') {
-    Steps {
+    steps {
     sh 'ant -f test.xml -v'
     junit 'reports/results.xml'
     }
   stage ('Build') {
-    Steps {
-    Sh ant -f build.xml -v
+    steps {
+    sh 'ant -f build.xml -v'
     }
   }
 }
