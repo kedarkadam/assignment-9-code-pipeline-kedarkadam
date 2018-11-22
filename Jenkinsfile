@@ -1,6 +1,6 @@
 Pipeline 
 {
- agent { label 'linux' }
+ agent {label 'linux'}
  stages 
  {
   stage ('Unit Tests') 
