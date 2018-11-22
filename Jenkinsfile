@@ -4,7 +4,7 @@ pipeline
   stages {
       stage ('Trial') {
        steps {
-    echo 'Hello'
+    echo 'Hello, this is a trial!'
        }
       }
    stage ('Unit Tests') {
