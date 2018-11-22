@@ -20,7 +20,7 @@ pipeline
    }
    stage ('Deploy'){
    	steps {
-   	sh 'aws s3 cp /workspace/java-pipeline/rectangle-${BUILD_NUMBER}.jar s3://ust123-kkadam '
+   	sh 'aws s3 cp /workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://ust123-kkadam '
    	}
    }
   }
